@@ -7,7 +7,8 @@ from .models import EventCategory, Location, Event
 class EventAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'location', 'date')
     search_fields = ('title', 'date')
-    list_filter = ('category')
+    list_filter = ['category']
+    date_hierarchy = 'date'
 
     fieldsets = (
         ('Allgemein',{
@@ -16,7 +17,8 @@ class EventAdmin(admin.ModelAdmin):
 
         ('Organisation', {
             'fields': ('location', 'capacity'),
-        })
+            'classes': ('collapse',)
+        }),
     )
 
 admin.site.register(EventCategory)
