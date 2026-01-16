@@ -6,8 +6,6 @@ administration UI without building a separate frontend.
 
 All interaction happens through the Django Admin Panel.
 
----
-
 ## Goal
 
 Practice backend fundamentals in a realistic but controlled setup:
@@ -25,8 +23,6 @@ Practice backend fundamentals in a realistic but controlled setup:
 - Auto-generated fields
 - Model metadata (verbose names, ordering)
 
----
-
 ## Tech Stack
 
 ### Backend
@@ -34,8 +30,6 @@ Practice backend fundamentals in a realistic but controlled setup:
 - Python
 - Django
 - SQLite (default Django database)
-
----
 
 ## Project Layout
 
@@ -60,8 +54,6 @@ event_booking/
 │  └─ er_diagramm.png     Screenshot for README
 └─ README.md
 ```
-
----
 
 ## Backend Overview
 
@@ -102,8 +94,6 @@ Booking
 
 Booking acts as a join table between Event and Participant with additional fields.
 
----
-
 ## Django Admin Features
 
 ### Event Admin
@@ -132,14 +122,10 @@ Form layout grouped using fieldsets:
 - full_name displayed as read-only
 - Help texts on form fields
 
----
-
 ## Screenshot – Django Admin
 
 Example view of the Event list in the Django Admin:
 ![Admin Event List](docs/er_diagramm.png)
-
----
 
 ## Setup (Local Development)
 
@@ -148,25 +134,23 @@ Example view of the Event list in the Django Admin:
 - Python 3.x
 - Optional: VS Code
 
----
-
 ## Backend Setup (Windows)
 
 Open terminal in project root.
 
 Create and activate virtual environment:
 
-````text
+```text
 python -m venv .venv
 .venv\Scripts\activate
-
+```
 
 Upgrade pip and install dependencies:
 
 ```text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-````
+```
 
 Run migrations:
 
@@ -190,8 +174,6 @@ python manage.py runserver
 
 Open in browser:
 http://127.0.0.1:8000/admin/
-
----
 
 ## Backend Setup (macOS / Linux)
 
