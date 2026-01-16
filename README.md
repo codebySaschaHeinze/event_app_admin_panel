@@ -57,7 +57,7 @@ event_booking/
 ├─ manage.py
 ├─ requirements.txt
 ├─ docs/
-│  └─ admin_event_list.png     Screenshot for README
+│  └─ er_diagramm.png     Screenshot for README
 └─ README.md
 ```
 
@@ -156,36 +156,37 @@ Open terminal in project root.
 
 Create and activate virtual environment:
 
-```text
+````text
 python -m venv .venv
 .venv\Scripts\activate
-```
+
 
 Upgrade pip and install dependencies:
 
-````text
+```text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-´´´
+````
 
 Run migrations:
 
 ```text
 python manage.py makemigrations
 python manage.py migrate
-´´´
+```
 
 Create admin user:
 
 ´´´text
 python manage.py createsuperuser
-´´´
+
+```
 
 Start the backend:
 
 ´´´text
 python manage.py runserver
-´´´
+```
 
 Open in browser:
 http://127.0.0.1:8000/admin/
@@ -201,32 +202,35 @@ Create and activate virtual environment:
 ´´´text
 python3 -m venv .venv
 source .venv/bin/activate
-´´´
+
+```
 
 Upgrade pip and install dependencies:
 
 ´´´text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-´´´
+```
 
 Run migrations:
 
 ´´´text
 python manage.py makemigrations
 python manage.py migrate
-´´´
+
+```
 
 Create admin user:
 
 ´´´text
 python manage.py createsuperuser
-´´´
+```
 
 Start the backend:
 ´´´text
 python manage.py runserver
-´´´
+
+```
 
 Open in browser:
 http://127.0.0.1:8000/admin/
@@ -257,4 +261,5 @@ This ensures all ForeignKey relations are available.
 - Not intended for production use
 
 License: Private learning project
-````
+
+```
