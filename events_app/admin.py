@@ -9,6 +9,7 @@ class EventAdmin(admin.ModelAdmin):
     search_fields = ('title', 'date')
     list_filter = ['category']
     date_hierarchy = 'date'
+    ordering = ('date',)
 
     fieldsets = (
         ('Allgemein',{

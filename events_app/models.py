@@ -21,5 +21,9 @@ class Event(models.Model):
     date = models.DateTimeField()
     capacity = models.PositiveIntegerField()
 
+    class Meta:
+        verbose_name = "Liveact"
+        verbose_name_plural = "Liveacts"
+
     def __str__(self):
         return f"{self.title} ({self.date.date()})"
