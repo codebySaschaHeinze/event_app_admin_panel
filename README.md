@@ -33,7 +33,7 @@ Practice backend fundamentals in a realistic but controlled setup:
 
 ## Project Layout
 
-´´´text
+```text
 event_booking/
 ├─ core/ Django project (settings, urls, wsgi)
 │
@@ -53,7 +53,7 @@ event_booking/
 ├─ docs/
 │ └─ er_diagramm.png Screenshot for README
 └─ README.md
-´´´
+```
 
 ## Backend Overview
 
@@ -140,37 +140,36 @@ Open terminal in project root.
 
 Create and activate virtual environment:
 
-´´´text
+```text
 python -m venv .venv
 .venv\Scripts\activate
-´´´
+```
 
 Upgrade pip and install dependencies:
 
-´´´text
+```text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
 ```
 
 Run migrations:
 
-´´´text
+```text
 python manage.py makemigrations
 python manage.py migrate
-´´´
+```
 
 Create admin user:
 
-´´´text
+```text
 python manage.py createsuperuser
-´´´
+```
 
 Start the backend:
 
-´´´text
+```text
 python manage.py runserver
-´´´
+```
 
 Open in browser:
 http://127.0.0.1:8000/admin/
@@ -181,40 +180,39 @@ Open terminal in project root.
 
 Create and activate virtual environment:
 
-´´´text
+```text
 python3 -m venv .venv
 source .venv/bin/activate
-´´´
+```
 
 Upgrade pip and install dependencies:
 
-´´´text
+```text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-´´´
+```
 
 Run migrations:
 
-´´´text
+```text
 python manage.py makemigrations
 python manage.py migrate
-´´´
+```
 
 Create admin user:
 
-´´´text
+```text
 python manage.py createsuperuser
-´´´
+```
 
 Start the backend:
-´´´text
+
+```text
 python manage.py runserver
-´´´
+```
 
 Open in browser:
 http://127.0.0.1:8000/admin/
-
----
 
 ## Workflow in Admin
 
@@ -228,8 +226,6 @@ Recommended order when adding data:
 
 This ensures all ForeignKey relations are available.
 
----
-
 ## Notes
 
 - This is a learning project focused on Django Admin usage
@@ -240,9 +236,3 @@ This ensures all ForeignKey relations are available.
 - Not intended for production use
 
 License: Private learning project
-
-```
-
-```
-
-```
