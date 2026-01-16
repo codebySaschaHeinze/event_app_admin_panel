@@ -134,6 +134,13 @@ Example view of the Event list in the Django Admin:
 - Python 3.x
 - Optional: VS Code
 
+Clone the repository
+
+```text
+git clone <YOUR_REPO_URL>
+cd chat_app
+```
+
 ## Backend Setup (Windows)
 
 Open terminal in project root.
