@@ -33,27 +33,27 @@ Practice backend fundamentals in a realistic but controlled setup:
 
 ## Project Layout
 
-```text
+´´´text
 event_booking/
-├─ core/                       Django project (settings, urls, wsgi)
+├─ core/ Django project (settings, urls, wsgi)
 │
-├─ events_app/                 Events domain
-│  ├─ migrations/
-│  ├─ models.py
-│  └─ admin.py
+├─ events_app/ Events domain
+│ ├─ migrations/
+│ ├─ models.py
+│ └─ admin.py
 │
-├─ bookings_app/               Booking domain
-│  ├─ migrations/
-│  ├─ models.py
-│  └─ admin.py
+├─ bookings_app/ Booking domain
+│ ├─ migrations/
+│ ├─ models.py
+│ └─ admin.py
 │
 ├─ db.sqlite3
 ├─ manage.py
 ├─ requirements.txt
 ├─ docs/
-│  └─ er_diagramm.png     Screenshot for README
+│ └─ er_diagramm.png Screenshot for README
 └─ README.md
-```
+´´´
 
 ## Backend Overview
 
@@ -140,37 +140,37 @@ Open terminal in project root.
 
 Create and activate virtual environment:
 
-```text
+´´´text
 python -m venv .venv
 .venv\Scripts\activate
-```
+´´´
 
 Upgrade pip and install dependencies:
 
-```text
+´´´text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+
 ```
 
 Run migrations:
 
-```text
+´´´text
 python manage.py makemigrations
 python manage.py migrate
-```
+´´´
 
 Create admin user:
 
 ´´´text
 python manage.py createsuperuser
-
-```
+´´´
 
 Start the backend:
 
 ´´´text
 python manage.py runserver
-```
+´´´
 
 Open in browser:
 http://127.0.0.1:8000/admin/
@@ -184,35 +184,32 @@ Create and activate virtual environment:
 ´´´text
 python3 -m venv .venv
 source .venv/bin/activate
-
-```
+´´´
 
 Upgrade pip and install dependencies:
 
 ´´´text
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-```
+´´´
 
 Run migrations:
 
 ´´´text
 python manage.py makemigrations
 python manage.py migrate
-
-```
+´´´
 
 Create admin user:
 
 ´´´text
 python manage.py createsuperuser
-```
+´´´
 
 Start the backend:
 ´´´text
 python manage.py runserver
-
-```
+´´´
 
 Open in browser:
 http://127.0.0.1:8000/admin/
@@ -243,5 +240,9 @@ This ensures all ForeignKey relations are available.
 - Not intended for production use
 
 License: Private learning project
+
+```
+
+```
 
 ```
