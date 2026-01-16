@@ -137,7 +137,7 @@ Example view of the Event list in the Django Admin:
 Clone the repository
 
 ```text
-git clone <YOUR_REPO_URL>
+git clone https://github.com/codebySaschaHeinze/event_app_admin_panel.git
 cd chat_app
 ```
 
